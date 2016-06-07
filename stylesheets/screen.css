@@ -1,0 +1,219 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* line 5, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 13, ../sass/screen.scss */
+.album {
+  width: 900px;
+  margin: 80px auto 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 18, ../sass/screen.scss */
+.album li {
+  width: 140px;
+  float: left;
+  margin: 20px 10px;
+  min-height: 150px;
+}
+/* line 24, ../sass/screen.scss */
+.album li > a span {
+  color: #fff;
+  font-weight: bold;
+  display: none;
+  position: relative;
+  top: 0;
+  text-align: center;
+  background: #000;
+  min-height: 35px;
+  padding-top: 5px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/* line 39, ../sass/screen.scss */
+.album li:hover a {
+  text-decoration: none;
+}
+/* line 43, ../sass/screen.scss */
+.album li:hover > a span {
+  display: block;
+}
+/* line 47, ../sass/screen.scss */
+.album li:hover > a img {
+  filter: -ms-grayscale(100%);
+  filter: -moz-grayscale(100%);
+  filter: -webkit-grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 55, ../sass/screen.scss */
+.album li > a img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  filter: -ms-grayscale(0%);
+  filter: -moz-grayscale(0%);
+  filter: -webkit-grayscale(0%);
+  filter: grayscale(0%);
+}
+/* line 65, ../sass/screen.scss */
+.album li .full-content {
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 100px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/* line 76, ../sass/screen.scss */
+.album li .full-content > div {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  width: 670px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+/* line 84, ../sass/screen.scss */
+.album li .full-content > div h3 {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* line 90, ../sass/screen.scss */
+.album li .full-content > div h3:before {
+  content: "";
+}
+/* line 96, ../sass/screen.scss */
+.album li .full-content > div p {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 13px;
+}
+/* line 103, ../sass/screen.scss */
+.album li .full-content > div img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 108, ../sass/screen.scss */
+.album li .full-content > div .back,
+.album li .full-content > div .next {
+  position: relative;
+  top: -250px;
+  font-size: 25px;
+  color: rgba(195, 195, 195, 0.8);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: rgba(195, 195, 195, 0);
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 25px;
+}
+/* line 122, ../sass/screen.scss */
+.album li .full-content > div .back:hover,
+.album li .full-content > div .next:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 128, ../sass/screen.scss */
+.album li .full-content > div .next {
+  float: right;
+}
+/* line 134, ../sass/screen.scss */
+.album li .full-content .close {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 3px solid #c3c3c3;
+  display: block;
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 19px;
+  color: #c3c3c3;
+  position: relative;
+  left: 650px;
+  top: -10px;
+}
+/* line 147, ../sass/screen.scss */
+.album li .full-content .close:hover {
+  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+/* line 153, ../sass/screen.scss */
+.album li .full-content:target {
+  display: block;
+}
